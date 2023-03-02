@@ -10,7 +10,11 @@
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="Resources\" />
-    <Folder Include="Pages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Models\CaptchaModel\CaptchaModel.csproj" />
+    <ProjectReference Include="..\Models\DataModels\DataModels.csproj" />
   </ItemGroup>
 
 </Project>

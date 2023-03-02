@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2CF0B643
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLight", "DemoLight\DemoLight.csproj", "{D3C80D87-E262-45DA-845B-585396B0B0DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptchaModel", "Models\CaptchaModel\CaptchaModel.csproj", "{3C65BBD6-3449-42A3-9E8E-6D4F9D04BC19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels", "Models\DataModels\DataModels.csproj", "{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,9 +23,21 @@ Global
 		{D3C80D87-E262-45DA-845B-585396B0B0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3C80D87-E262-45DA-845B-585396B0B0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3C80D87-E262-45DA-845B-585396B0B0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C65BBD6-3449-42A3-9E8E-6D4F9D04BC19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C65BBD6-3449-42A3-9E8E-6D4F9D04BC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C65BBD6-3449-42A3-9E8E-6D4F9D04BC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C65BBD6-3449-42A3-9E8E-6D4F9D04BC19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C65BBD6-3449-42A3-9E8E-6D4F9D04BC19} = {E3356DCD-68F3-481C-BCBD-2A62504CF706}
+		{0950EC81-1804-4B1F-84AA-EB2FEFD42B57} = {E3356DCD-68F3-481C-BCBD-2A62504CF706}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F41A050-C5E5-4A00-9343-77FF9E452608}

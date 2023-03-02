@@ -12,25 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using DemoLight.Pages;
+using DemoLight.ViewModels.Vms;
 
-namespace DemoLight
+namespace DemoLight.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Start.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Start : Page
     {
-        private Page? _start;
-        private Page StartPage => _start ??= new Start() { Ok = () => MainFrame.Navigate(LoginPage) };
+        public Action? Ok { get; init; }
 
-        private Page? _login;
-        private Page LoginPage => _login ??= new Login();
-
-        public MainWindow()
+        public Start()
         {
             InitializeComponent();
-            MainFrame.Navigate(StartPage);
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is StartViewModel viewModel) viewModel.Ok = Ok;
         }
     }
 }
