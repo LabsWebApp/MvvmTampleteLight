@@ -7,11 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{E3356D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2CF0B643-2F00-47E4-ACEA-40193A848F8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLight", "DemoLight\DemoLight.csproj", "{D3C80D87-E262-45DA-845B-585396B0B0DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoLight.WpfView", "DemoLight\DemoLight.WpfView.csproj", "{D3C80D87-E262-45DA-845B-585396B0B0DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptchaModel", "Models\CaptchaModel\CaptchaModel.csproj", "{3C65BBD6-3449-42A3-9E8E-6D4F9D04BC19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaptchaModel", "Models\CaptchaModel\CaptchaModel.csproj", "{3C65BBD6-3449-42A3-9E8E-6D4F9D04BC19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels", "Models\DataModels\DataModels.csproj", "{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModels", "Models\DataModels\DataModels.csproj", "{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

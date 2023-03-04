@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace DemoLight.ViewModels;
+namespace DemoLight.WpfView.ViewModels;
 
 internal abstract class ViewModelBase : INotifyPropertyChanged
 {
