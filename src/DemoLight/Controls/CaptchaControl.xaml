@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="DemoLight.WpfView.Controls.CaptchaControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DemoLight.WpfView.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Orientation="Vertical">
+        <Label FontWeight="Bold" 
+               Content="Подтвердите, что Вы человек!" />
+        <StackPanel Orientation="Horizontal">
+            <Image Source="{Binding CaptchaImage}" 
+                   Width="120" Height="48" />
+            <Button Height="30" Width="30"
+                    Command="{Binding CaptchaRefresh}">
+                <Label Content="&#xE117;" 
+                       Style="{StaticResource SymbolLbl}" 
+                       Foreground="Navy"/>
+            </Button>
+        </StackPanel>
+        <Label>Код, изображённый на картинке:</Label>
+        <StackPanel Orientation="Horizontal">
+            <TextBox x:Name="TxtBox"
+                     Width="120" Height="22"
+                     MaxLength="6"
+                     Text="{Binding CaptchaCode, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Style="{StaticResource SymbolLbl}"
+                   Content="{Binding CaptchaOk, Converter={StaticResource BoolToYesNoSymbol}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" />
+        </StackPanel>
+     </StackPanel>
+</UserControl>

@@ -12,8 +12,6 @@ namespace DemoLight.WpfView.Pages
         public Start()
         {
             InitializeComponent();
-            if (DataContext is StartViewModel viewModel)
-                viewModel.Ok = () => Navigate(NavigateTo.Login, this);
         }
     }
 }
