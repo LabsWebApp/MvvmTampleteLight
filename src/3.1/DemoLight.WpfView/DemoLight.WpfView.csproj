@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Models\CaptchaModel\CaptchaModel.csproj" />
+		<ProjectReference Include="..\Models\DataModels\DataModels.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Controls\CaptchaControl.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Update="Pages\Login.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Update="Pages\Start.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+	</ItemGroup>
+
+</Project>

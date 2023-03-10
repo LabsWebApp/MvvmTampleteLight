@@ -1,0 +1,190 @@
+/**************** menu coding *****************/
+
+.menu
+{
+	width: 192px;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+.menu ul
+{
+	list-style: none;
+	margin: 0px;
+	padding: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border: none;
+}
+
+.menu a, .menu h2
+{
+	font-size: 9pt;
+	display: block;
+	margin: 0px;
+	padding: 0px 2px 0px;
+	border: none;
+}
+
+.menu a
+{
+	color: #33c;
+	background: transparent;
+	text-decoration: none;
+}
+
+.menu h2
+{
+	color: #fff;
+	background: #fff;
+}
+
+
+.menu a:hover
+{
+	color: #33c;
+	text-decoration: underline;
+}
+
+.menu li
+{
+	position: relative;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.menu ul ul ul
+{
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 184px;
+	width: 182px;
+	border: 0px;
+	padding: 0px;
+}
+
+div.menu ul ul ul, div.menu ul ul li:hover ul ul
+{
+	display: none;
+}
+
+div.menu ul ul li:hover ul, div.menu ul ul ul li:hover ul
+{
+	display: block;
+}
+
+
+.menu .submenus
+{
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+
+A.link, A.link:visited, A.link:active
+{
+	color: #777;
+	text-decoration: none;
+	margin-left: 8px;
+	margin-right: 1px;
+	padding: 0px 8px;
+	white-space: nowrap;
+	padding-right: 24px;
+} 
+A.link:hover
+{
+	background: url('images/link-back-hover.gif');
+	background-repeat: repeat-y;
+	color: #000;
+	text-decoration: none;
+}
+
+A.linkpopup, A.linkpopup:visited, A.linkpopup:active
+{
+	color: #777;
+	text-decoration: none;
+	margin-left: 8px;
+	margin-right: 1px;
+	padding: 0px 8px;
+	white-space: nowrap;
+	background: url('images/linkpopup-back.gif');
+	background-repeat: repeat-y;
+	padding-right: 24px;
+} 
+A.linkpopup:hover
+{
+	background: url('images/linkpopup-back-hover.gif');
+	background-repeat: repeat-y;
+	color: #000;
+	text-decoration: none;
+}
+
+
+
+.linksSubMenu A, .linksSubMenu A:visited, .linksSubMenu A:active
+{
+	color: #777;
+	border-bottom: 1px solid #ccc;
+	margin-right: 1px;
+}
+
+.linksSubMenu A:hover
+{
+	color: #000;
+	text-decoration: none;
+	background: url('images/link-submenu-back-hover.gif');
+	margin-left: -7px;
+	padding-left: 9px;
+	width: 161px;
+}
+
+.headerWindows	{	background: url('images/nb1-windows.gif');	height: 39px;	cursor: pointer;	background-repeat: no-repeat;	}
+.linksWindows	{	background: url('images/nb3-windows.gif');	background-repeat: repeat-y;	}
+.footerWindows	{	background: url('images/nb2-windows.gif');	height: 12px;	background-repeat: no-repeat;	margin-left: 2px;	}
+
+.headerWindowsMobile	{	background: url('images/nb1-windowsmobile.gif');	height: 39px;	cursor: pointer;	background-repeat: no-repeat;	}
+.titleWindowsMobile	{	background: url('images/nb3-windowsmobile.gif');	background-repeat: repeat-y;	padding-right: 10px; font-size: 120%; }
+.sepWindowsMobile	{	background: url('images/nbsep-windowsmobile.gif');	background-repeat: no-repeat;	height: 3px;}
+.linksWindowsMobile	{	background: url('images/nb3-windowsmobile.gif');	background-repeat: repeat-y;	}
+.footerWindowsMobile	{	background: url('images/nb2-windowsmobile.gif');	height: 12px;	background-repeat: no-repeat;	margin-left: 2px;	}
+
+.headerProgramming	{	background: url('images/nb1-programming.gif');	height: 39px;	cursor: pointer;	background-repeat: no-repeat;	}
+.linksProgramming		{	background: url('images/nb3-programming.gif');	background-repeat: repeat-y;	}
+.footerProgramming	{	background: url('images/nb2-programming.gif');	height: 12px;	background-repeat: no-repeat;	margin-left: 2px;	}
+
+.headerRetrogaming	{	background: url('images/nb1-retrogaming.gif');	height: 39px;	cursor: pointer;	background-repeat: no-repeat;	}
+.linksRetrogaming		{	background: url('images/nb3-retrogaming.gif');	background-repeat: repeat-y;	}
+.footerRetrogaming	{	background: url('images/nb2-retrogaming.gif');	height: 12px;	background-repeat: no-repeat;	margin-left: 2px;	}
+
+.headerRingtones	{	background: url('images/nb1-ringtones.gif');	height: 39px;	cursor: pointer;	background-repeat: no-repeat;	}
+.linksRingtones	{	background: url('images/nb3-ringtones.gif');	background-repeat: repeat-y;	}
+.footerRingtones	{	background: url('images/nb2-ringtones.gif');	height: 12px;	background-repeat: no-repeat;	margin-left: 2px;	}
+
+.headerPsion	{	background: url('images/nb1-psion.gif');	height: 39px;	cursor: pointer;	background-repeat: no-repeat;	}
+.linksPsion		{	background: url('images/nb3-psion.gif');	background-repeat: repeat-y;	}
+.footerPsion	{	background: url('images/nb2-psion.gif');	height: 12px;	background-repeat: no-repeat;	margin-left: 2px;	}
+
+.headerAmiga	{	background: url('images/nb1-amiga.gif');	height: 39px;	cursor: pointer;	background-repeat: no-repeat;	}
+.linksAmiga 	{	background: url('images/nb3-amiga.gif');	background-repeat: repeat-y;	}
+.footerAmiga	{	background: url('images/nb2-amiga.gif');	height: 12px;	background-repeat: no-repeat;	margin-left: 2px;	}
+
+.headerMisc	{	background: url('images/nb1-misc.gif');	height: 39px;	cursor: pointer;	background-repeat: no-repeat;	}
+.linksMisc	{	background: url('images/nb3-misc.gif');	background-repeat: repeat-y;	}
+.footerMisc	{	background: url('images/nb2-misc.gif');	height: 12px;	background-repeat: no-repeat;	margin-left: 2px;	}
+
+.headerSearch	{	background: url('images/nb1-search.gif');	height: 39px;	background-repeat: no-repeat;	}
+.linksSearch	{	background: url('images/nb3-search.gif');	background-repeat: repeat-y;	}
+.footerSearch	{	background: url('images/nb2-search.gif');	height: 12px;	background-repeat: no-repeat;	}
+
+.headerSubMenu	{	background: url('images/nb1-submenu.gif');	height: 8px;	cursor: pointer;	background-repeat: no-repeat; font-size: 1px;	}
+.linksSubMenu 	{	background: url('images/nb3-submenu.gif');	background-repeat: repeat-y;	text-align: left;	padding-left: 15px;	}
+.linksSubMenuTitle 	{	background: url('images/nb3-submenu.gif');	background-repeat: repeat-y;	text-align: left;	padding-left: 10px;	font-weight: bold;	}
+.footerSubMenu	{	background: url('images/nb2-submenu.gif');	height: 4px;	background-repeat: no-repeat;	font-size: 1px;}
+
+.headerSubMenu-preload	{	background: url('images/nb1-submenu.gif');	width: 0px;	height: 0px;	font-size: 1px;	}
+.linksSubMenu-preload 	{	background: url('images/nb3-submenu.gif');	width: 0px;	height: 0px;	font-size: 1px;	}
+.footerSubMenu-preload	{	background: url('images/nb2-submenu.gif');	width: 0px;	height: 0px;	font-size: 1px;	}

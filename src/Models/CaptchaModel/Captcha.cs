@@ -13,6 +13,6 @@ public static class Captcha
         var code = new Random().Next(100_000, 999_999).ToString();
 #endif
 
-        return (GetHashString(code), new CaptchaGenerator().GenerateImageAsByteArray(code.ToString()));
+        return (GetHashString(code), new CaptchaGenerator().GenerateImageAsByteArray(code));
     }
 }
