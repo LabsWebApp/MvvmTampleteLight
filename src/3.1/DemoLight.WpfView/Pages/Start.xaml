@@ -15,5 +15,6 @@
     <StackPanel VerticalAlignment="Center">
         <controls:CaptchaControl/>
         <Label Content="{Binding CaptchaOk, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="&#xE103;"  Style="{StaticResource VerticalSymbolLbl}"/>
     </StackPanel>
 </Page>

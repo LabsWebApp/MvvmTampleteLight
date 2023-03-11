@@ -16,6 +16,7 @@ namespace DemoLight.WpfView.Helpers
         {
             NavigateTo.Start => new Start(),
             NavigateTo.Login => new Login(),
+            NavigateTo.Sum => new Sum(),
             //NavigateTo.Registration => new RegistrationPage(),
             //NavigateTo.AdminArea => new AdminPage(),
             //NavigateTo.UserArea => new UserPage(),

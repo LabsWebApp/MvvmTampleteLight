@@ -6,4 +6,15 @@
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
     </Style>
+
+    <Style x:Key="VerticalSymbolLbl" TargetType="Label" BasedOn="{StaticResource SymbolLbl}">
+        <Setter Property="LayoutTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <RotateTransform Angle="90" />
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

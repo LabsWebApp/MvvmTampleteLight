@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\3.1\Models\CalcModel\CalcModel.csproj" />
     <ProjectReference Include="..\Models\CaptchaModel\CaptchaModel.csproj" />
     <ProjectReference Include="..\Models\DataModels\DataModels.csproj" />
   </ItemGroup>

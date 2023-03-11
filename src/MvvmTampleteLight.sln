@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModels", "3.1\Models\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaptchaModel", "3.1\Models\CaptchaModel\CaptchaModel.csproj", "{FE9D5CBF-12E0-48FB-9707-DBCB3D518086}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLight.WpfView", "3.1\DemoLight.WpfView\DemoLight.WpfView.csproj", "{954C83F5-0C5C-4B23-BC40-D32A0DB76714}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoLight.WpfView", "3.1\DemoLight.WpfView\DemoLight.WpfView.csproj", "{954C83F5-0C5C-4B23-BC40-D32A0DB76714}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcModel", "3.1\Models\CalcModel\CalcModel.csproj", "{A8722C95-A32D-4CC3-A2BD-638E7AA3BC2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{954C83F5-0C5C-4B23-BC40-D32A0DB76714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{954C83F5-0C5C-4B23-BC40-D32A0DB76714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{954C83F5-0C5C-4B23-BC40-D32A0DB76714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8722C95-A32D-4CC3-A2BD-638E7AA3BC2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8722C95-A32D-4CC3-A2BD-638E7AA3BC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8722C95-A32D-4CC3-A2BD-638E7AA3BC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8722C95-A32D-4CC3-A2BD-638E7AA3BC2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{68CBB43C-1747-4373-B5B5-0974CE024765} = {96CAE133-1D7F-40DA-806D-A907BF327DFC}
 		{FE9D5CBF-12E0-48FB-9707-DBCB3D518086} = {96CAE133-1D7F-40DA-806D-A907BF327DFC}
 		{954C83F5-0C5C-4B23-BC40-D32A0DB76714} = {C336E3D6-6293-4AB2-A9F5-E488B3D22594}
+		{A8722C95-A32D-4CC3-A2BD-638E7AA3BC2D} = {E3356DCD-68F3-481C-BCBD-2A62504CF706}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F41A050-C5E5-4A00-9343-77FF9E452608}

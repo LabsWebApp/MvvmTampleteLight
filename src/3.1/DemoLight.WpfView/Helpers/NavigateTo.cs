@@ -2,7 +2,7 @@
 {
     public enum NavigateTo
     {
-        Start, Login, Registration, AdminArea, UserArea
+        Start, Login, Registration, AdminArea, UserArea, Sum
     }
 }
 
