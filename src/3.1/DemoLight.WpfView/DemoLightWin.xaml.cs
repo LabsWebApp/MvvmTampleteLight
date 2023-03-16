@@ -11,7 +11,7 @@ namespace DemoLight.WpfView
         public DemoLightWin()
         {
             InitializeComponent();
-            Navigation.Navigate(NavigateTo.Sum, this);
+            Navigation.Navigate(NavigateTo.Start, this);
         }
     }
 }
