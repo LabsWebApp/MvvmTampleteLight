@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataModels.Entities;
 
@@ -13,5 +14,6 @@ public class Message
     public DateTime PublishTime { get; set; } = DateTime.Now;
 
     public string? Title { get; set; }
-    public string Content { get; set; } = null!;
+    
+    [MinLength(4), MaxLength(500)] public string Content { get; set; } = null!;
 }

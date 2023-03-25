@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataModels.Entities;
 
@@ -7,6 +8,8 @@ public class Place
 {
     public int Id { get; init; }
 
+    [Required]
+    [MinLength(1), MaxLength(500)]
     public string Name { get; set; } = null!;
 
     public byte[]? Image { get; set; }

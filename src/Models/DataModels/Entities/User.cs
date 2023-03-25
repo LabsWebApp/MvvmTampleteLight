@@ -20,7 +20,7 @@ public class User
     [EmailAddress, Required] public string Email { get; set; } = null!;
     [Required] public string PhoneNumber { get; set; } = null!;
 
-    public SexEnum Sex { get; set; } = SexEnum.Unknown;
+    public SexEnum? Sex { get; set; } = SexEnum.Unknown;
 
     public DateOnly? Birthday { get; set; }
 
