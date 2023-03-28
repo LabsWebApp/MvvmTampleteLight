@@ -18,6 +18,7 @@ public class User
     [Required] public string? PasswordHash { get; set; }
 
     [EmailAddress, Required] public string Email { get; set; } = null!;
+    
     [Required] public string PhoneNumber { get; set; } = null!;
 
     public SexEnum Sex { get; set; } = SexEnum.Unknown;

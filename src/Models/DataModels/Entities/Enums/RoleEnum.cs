@@ -1,3 +1,3 @@
 ﻿namespace DataModels.Entities.Enums;
 
-public enum RoleEnum { Guest = -1, Admin = 1, User = 0}
+public enum RoleEnum { Guest = -1, Admin = 10, User = 0}
