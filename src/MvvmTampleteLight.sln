@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModels", "Models\DataMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContextTest", "Tests\DataContextTest\DataContextTest.csproj", "{26F43461-E1BD-4051-96C7-7938A37C7691}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{EF18E364-0ED2-4FA9-8521-6D82FD570B18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{26F43461-E1BD-4051-96C7-7938A37C7691}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26F43461-E1BD-4051-96C7-7938A37C7691}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26F43461-E1BD-4051-96C7-7938A37C7691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF18E364-0ED2-4FA9-8521-6D82FD570B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF18E364-0ED2-4FA9-8521-6D82FD570B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF18E364-0ED2-4FA9-8521-6D82FD570B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF18E364-0ED2-4FA9-8521-6D82FD570B18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

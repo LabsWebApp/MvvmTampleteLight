@@ -1,6 +1,5 @@
 ﻿using DataModels.Entities;
 using Microsoft.EntityFrameworkCore;
-using System.Data;
 
 namespace DataModels;
 
@@ -32,6 +31,11 @@ public sealed class DataContext : DbContext
             .HasMany(e => e.Organizers)
             .WithMany(u => u.OrganizerEvents)
             .UsingEntity(j => j.ToTable("OrganizerEvent"));
+        
+        modelBuilder.Entity<Event>()
+            .HasMany(e => e.MustBeChangedUsers)
+            .WithMany(u => u.MustBeChangedEvents)
+            .UsingEntity(j => j.ToTable("MustBeChangedEvent"));
 
         base.OnModelCreating(modelBuilder);
 

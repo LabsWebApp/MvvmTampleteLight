@@ -34,6 +34,7 @@ public class User
     public virtual IList<Event> ParticipantEvents { get; set; } = new List<Event>();
     public virtual IList<Event> ModeratorEvents { get; set; } = new List<Event>();
     public virtual IList<Event> OrganizerEvents { get; set; } = new List<Event>();
+    public virtual IList<Event> MustBeChangedEvents { get; set; } = new List<Event>();
 
     public static User Guest => new()
     {

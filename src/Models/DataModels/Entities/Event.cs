@@ -26,4 +26,5 @@ public class Event
     public virtual IList<User> Participants { get; set; } = new List<User>();
     public virtual IList<User> Moderators { get; set; } = new List<User>();
     public virtual IList<User> Organizers { get; set; } = new List<User>();
+    public virtual IList<User> MustBeChangedUsers { get; set; } = new List<User>();
 }
