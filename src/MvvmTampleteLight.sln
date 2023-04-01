@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaptchaModel", "Models\Capt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModels", "Models\DataModels\DataModels.csproj", "{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContextTest", "Tests\DataContextTest\DataContextTest.csproj", "{26F43461-E1BD-4051-96C7-7938A37C7691}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0950EC81-1804-4B1F-84AA-EB2FEFD42B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F43461-E1BD-4051-96C7-7938A37C7691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F43461-E1BD-4051-96C7-7938A37C7691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F43461-E1BD-4051-96C7-7938A37C7691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F43461-E1BD-4051-96C7-7938A37C7691}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3C65BBD6-3449-42A3-9E8E-6D4F9D04BC19} = {E3356DCD-68F3-481C-BCBD-2A62504CF706}
 		{0950EC81-1804-4B1F-84AA-EB2FEFD42B57} = {E3356DCD-68F3-481C-BCBD-2A62504CF706}
+		{26F43461-E1BD-4051-96C7-7938A37C7691} = {2CF0B643-2F00-47E4-ACEA-40193A848F8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F41A050-C5E5-4A00-9343-77FF9E452608}

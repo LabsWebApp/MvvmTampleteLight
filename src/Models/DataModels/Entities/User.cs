@@ -9,19 +9,19 @@ public class User
 {
     public int Id { get; init; }
 
-    [Required] public RoleEnum RoleName { get; set; }
+    [Required] public RoleEnum Role { get; set; }
 
     [MinLength(3), MaxLength(500)]
     [Required]
     public string FullName { get; set; } = null!;
 
-    [Required] public string? PasswordHash { get; set; }
+    public string? PasswordHash { get; set; }
 
-    [EmailAddress, Required] public string Email { get; set; } = null!;
+    [EmailAddress, Required] public string Email { get; set; } = string.Empty;
     
-    [Required] public string PhoneNumber { get; set; } = null!;
+    [Required] public string PhoneNumber { get; set; } = string.Empty;
 
-    public SexEnum Sex { get; set; } = SexEnum.Unknown;
+    public SexEnum? Sex { get; set; }
 
     public DateOnly? Birthday { get; set; }
 
@@ -31,10 +31,14 @@ public class User
 
     public virtual IList<Message> Messages { get; set; } = new List<Message>();
 
+    public virtual IList<Event> ParticipantEvents { get; set; } = new List<Event>();
+    public virtual IList<Event> ModeratorEvents { get; set; } = new List<Event>();
+    public virtual IList<Event> OrganizerEvents { get; set; } = new List<Event>();
+
     public static User Guest => new()
     {
         Id = -1,
-        RoleName = RoleEnum.Guest, 
+        Role = RoleEnum.Guest, 
         FullName = "Гость",
         Email = "guest@guest.guest",
         PhoneNumber = "0"
@@ -42,8 +46,8 @@ public class User
 
     public static User Admin => new()
     {
-        Id = 0,
-        RoleName = RoleEnum.Admin,
+        Id = 1,
+        Role = RoleEnum.Admin,
         FullName = "admin",
         PasswordHash = Helpers.GetHashString("admin"),
         Email = "MustChange@Must.Change",

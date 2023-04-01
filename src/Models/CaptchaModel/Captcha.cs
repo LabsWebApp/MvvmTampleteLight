@@ -5,7 +5,7 @@ namespace CaptchaModel;
 
 public static class Captcha
 {
-    public static (string captchaHashCode, byte[] image ) GenerateImageAsByteArray()
+    public static (string captchaHashCode, byte[] image) GenerateImageAsByteArray()
     {
 #if DEBUG
         var code = new Random().Next(10, 99).ToString();

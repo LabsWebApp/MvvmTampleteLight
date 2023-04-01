@@ -15,4 +15,5 @@ public class Place
     public byte[]? Image { get; set; }
 
     public virtual IList<User> Users { get; set; } = new List<User>();
+    public virtual IList<Event> Events { get; set; } = new List<Event>();
 }
