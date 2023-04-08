@@ -20,11 +20,33 @@ public class Event
     [MinLength(4), MaxLength(4096)]
     public string? Description { get; set; } = "Хорошая пьянка!";
 
-    public Guid PlaceId { get; set; }
+    public int PlaceId { get; set; }
     public Place? Place { get; set; }
 
     public virtual IList<User> Participants { get; set; } = new List<User>();
     public virtual IList<User> Moderators { get; set; } = new List<User>();
     public virtual IList<User> Organizers { get; set; } = new List<User>();
     public virtual IList<User> MustBeChangedUsers { get; set; } = new List<User>();
+
+    //public static readonly IList<Event> ExampleEvents = new List<Event>
+    //{
+    //    new()
+    //    {
+    //        Name = "Example1",
+    //        StartedAt = new DateTime(2024, 5, 5),
+    //        PlaceId = 1
+    //    },
+    //    new()
+    //    {
+    //        Name = "Example2",
+    //        StartedAt = new DateTime(2024, 10, 5),
+    //        PlaceId = 2
+    //    },
+    //    new()
+    //    {
+    //        Name = "Example3",
+    //        StartedAt = new DateTime(2022, 11, 5),
+    //        PlaceId = 3
+    //    },
+    //};
 }

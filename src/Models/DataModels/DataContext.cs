@@ -37,9 +37,9 @@ public sealed class DataContext : DbContext
             .WithMany(u => u.MustBeChangedEvents)
             .UsingEntity(j => j.ToTable("MustBeChangedEvent"));
 
-        base.OnModelCreating(modelBuilder);
-
         modelBuilder.Entity<User>().HasData(User.Admin);
         modelBuilder.Entity<User>().HasData(User.Guest);
+
+        foreach (var item in Place.Places) modelBuilder.Entity<Place>().HasData(item);
     }
 }

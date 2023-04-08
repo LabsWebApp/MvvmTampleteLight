@@ -21,6 +21,8 @@ public class User
     
     [Required] public string PhoneNumber { get; set; } = string.Empty;
 
+    public string? Image { get; set; }
+
     public SexEnum? Sex { get; set; }
 
     public DateOnly? Birthday { get; set; }
